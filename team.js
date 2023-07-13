@@ -1,4 +1,4 @@
-let members = [
+const members = [
   {
     name: "Marco",
     surname: "Tassone",
@@ -7,16 +7,16 @@ let members = [
     hobby: "videogames",
     favoriteFood: "carbonara",
     favoriteVideoGame: "MegaMan Star Force",
-    favoriteFilm: " ",
-    favoriteBook: " ",
-    petName: " ",
+    favoriteFilm: "",
+    favoriteBook: "",
+    petName: "",
   },
   {
-    name:"Dennis",
-    surname:"Glorioso",
+    name: "Dennis",
+    surname: "Glorioso",
     age: 20,
-    city:"Licata",
-    hobby:"Videogames",
+    city: "Licata",
+    hobby: "Videogames",
     favoriteFood: "pasta",
     favoriteVideoGame: "God of war",
     favoriteFilm: "Interstellar",
@@ -24,28 +24,28 @@ let members = [
     petName: ""
   },
   {
-    nome: 'Andrea',
-    cognome: 'Saitta',
+    name: 'Andrea',
+    surname: 'Saitta',
     age: 20,
     city: 'Bronte',
     hobby: 'Video Games, Anime',
     favoriteFood: 'Pizza',
     favoriteVideoGame: 'AC:Black Flag',
-    favoriteFilm: '',
-    favoriteBook: '',
+    favoriteFilm: "",
+    favoriteBook: "",
     petName: 'Luna'
   },
   {
-     name: "Desirè",
-     surname:"Passalacqua",
-     age: 25,
-     city: "Catania",
-     hobby: "videogames",
-     favoriteFood: "Pizza",
-     favoriteVideoGame: "The Last of Us part II",
-     favoriteFilm:"Joker",
-     favoriteBook:"La storia infinita",
-     petName: "Trilly"
+    name: "Desirè",
+    surname: "Passalacqua",
+    age: 25,
+    city: "Catania",
+    hobby: "videogames",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "The Last of Us part II",
+    favoriteFilm: "Joker",
+    favoriteBook: "La storia infinita",
+    petName: "Trilly"
   },
   {
     name: "Luca",
@@ -57,7 +57,6 @@ let members = [
     favoriteVideoGame: "Call of Duty",
     favoriteFilm: "Star Wars",
     favoriteBook: "",
-    namePet: "Tommy"
-   }
+    petName: "Tommy"
+  }
 ];
-
