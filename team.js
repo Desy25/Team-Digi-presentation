@@ -36,16 +36,28 @@ let members = [
     petName: 'Luna'
   },
   {
-   name: "Desirè",
-   surname:"Passalacqua",
-   age: 25,
-   city: "Catania",
-   hobby: "videogames",
-   favoriteFood: "Pizza",
-   favoriteVideoGame: "The Last of Us part II",
-   favoriteFilm:"Joker",
-   favoriteBook:"La storia infinita",
-   petName: "Trilly"
-  }
+     name: "Desirè",
+     surname:"Passalacqua",
+     age: 25,
+     city: "Catania",
+     hobby: "videogames",
+     favoriteFood: "Pizza",
+     favoriteVideoGame: "The Last of Us part II",
+     favoriteFilm:"Joker",
+     favoriteBook:"La storia infinita",
+     petName: "Trilly"
+  },
+  {
+    name: "Luca",
+    surname: "Lai",
+    age: 34,
+    city: "Cagliari",
+    hobby: "Calisthenic",
+    favoriteFood: "Lasagna",
+    favoriteVideoGame: "Call of Duty",
+    favoriteFilm: "Star Wars",
+    favoriteBook: "",
+    namePet: "Tommy"
+   }
 ];
 
