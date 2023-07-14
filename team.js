@@ -62,15 +62,7 @@ const members = [
 ];
 
 
-let findAverageAge = (arr = []) => {
-  let { sum, count } = arr.reduce((acc, val) => {
-     let { sum, count } = acc;
-     sum += val.age;
-     count++;
-     return { sum, count };
-     }, {
-        sum: 0, count: 0
-  });
-  return (sum / (count || 1));
-};
-console.log(`${"The avarage age is"} ${findAverageAge(members)}`);
+const sumOfAges = members.reduce((total, member) => total + member.age, 0);
+const averageAge = sumOfAges / members.length;
+
+console.log(averageAge);
