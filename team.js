@@ -62,12 +62,15 @@ const members = [
 ];
 
 
-function teamPets() {
-    for(i = 0; i < members.length; i++) {
-       if (members[i].petName) { 
-        console.log(`${members[i].name}'s pet is called ${members[i].petName}`);
-        }
-    }
+let findAverageAge = (arr = []) => {
+  let { sum, count } = arr.reduce((acc, val) => {
+     let { sum, count } = acc;
+     sum += val.age;
+     count++;
+     return { sum, count };
+     }, {
+        sum: 0, count: 0
+  });
+  return (sum / (count || 1));
 };
-
-teamPets();
+console.log(`${"The avarage age is"} ${findAverageAge(members)}`);
