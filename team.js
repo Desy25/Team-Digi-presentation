@@ -62,7 +62,7 @@ const members = [
 ];
 
 
-const sumOfAges = members.reduce((total, member) => total + member.age, 0);
+const sumOfAges = members.reduce((total, member) => total + member.age,0);
 const averageAge = sumOfAges / members.length;
 
 console.log(averageAge);
