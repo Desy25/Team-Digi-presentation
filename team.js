@@ -60,3 +60,14 @@ const members = [
     petName: "Tommy"
   }
 ];
+
+
+function teamPets() {
+    for(i = 0; i < members.length; i++) {
+       if (members[i].petName) { 
+        console.log(`${members[i].name}'s pet is called ${members[i].petName}`);
+        }
+    }
+};
+
+teamPets();
