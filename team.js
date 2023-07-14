@@ -60,3 +60,21 @@ const members = [
     petName: "Tommy"
   }
 ];
+
+//print who write "LOL" or "League of Legends" on favorite games
+function favGames(array) {
+  let likesLol = false;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].favoriteVideoGame == "League of Legends" || array[i].favoriteVideoGame == "LOL") {
+      console.log(array[i].name + " likes League of Legends")
+      likesLol = true
+    }
+
+  }
+  if (likesLol == false) {
+    console.log("A nessuno piace questo gioco!!")
+  }
+
+}
+
+favGames(members)
