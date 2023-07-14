@@ -58,5 +58,17 @@ const members = [
     favoriteFilm: "Star Wars",
     favoriteBook: "",
     petName: "Tommy"
+  },
+  {
+    name: "Lorenzo",
+    surname: "Gatto",
+    age: 27,
+    city: "Mogliano Veneto",
+    hobby: "Gym",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "Valorant",
+    favoriteFilm: "Marvel",
+    favoriteBook: "Game of Thrones",
+    petName: "Holly"
   }
 ];
