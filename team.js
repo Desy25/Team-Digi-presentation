@@ -117,3 +117,17 @@ function favGames(array) {
   }
 }
 favGames(members)
+
+
+
+// Print who has a pet. (Desirè)
+
+function getMembersPet(array) {
+  for(let i = 0; i < array.length; i++){
+      if (array[i].petName.length > 0) {
+          console.log(array[i].name + "-" + array[i].petName);
+      }
+  }
+}
+
+getMembersPet(members);
