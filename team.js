@@ -73,6 +73,14 @@ const members = [
   }
 ];
 
+
+/* Media Età (Luca) */
+const sumOfAges = members.reduce((total, member) => total + member.age,0);
+const averageAge = sumOfAges / members.length;
+console.log(averageAge);
+
+
+/* Favorite Game (Dennis) */
 //print who write "LOL" or "League of Legends" on favorite games
 function favGames(array) {
   let likesLol = false;
@@ -86,7 +94,5 @@ function favGames(array) {
   if (likesLol == false) {
     console.log("A nessuno piace questo gioco!!")
   }
-
 }
-
 favGames(members)
