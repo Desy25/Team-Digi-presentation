@@ -60,3 +60,24 @@ const members = [
     petName: "Tommy"
   }
 ];
+
+/* Ordine di età + nome (Andrea) */
+function sortAge(arr) {
+  arr.sort((a, b) => {
+    const ageA = a.age;
+    const ageB = b.age;
+
+    if (ageA < ageB) {
+      return -1
+    } else if (ageA > ageB) {
+      return 1
+    }
+    return 0;
+  })
+
+  arr.forEach(x => {
+    console.log(`${x.name} ${x.age}`)
+  })
+}
+
+sortAge(members);
