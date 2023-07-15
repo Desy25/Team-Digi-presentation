@@ -58,10 +58,23 @@ const members = [
     favoriteFilm: "Star Wars",
     favoriteBook: "",
     petName: "Tommy"
+  },
+  {
+    name: "Lorenzo",
+    surname: "Gatto",
+    age: 27,
+    city: "Mogliano Veneto",
+    hobby: "Gym",
+    favoriteFood: "Pizza",
+    favoriteVideoGame: "Valorant",
+    favoriteFilm: "Marvel",
+    favoriteBook: "Game of Thrones",
+    petName: "Holly"
   }
 ];
 
-/* Ordine di età + nome (Andrea) */
+
+/* Ordine di età (Andrea) */
 function sortAge(arr) {
   arr.sort((a, b) => {
     const ageA = a.age;
@@ -79,5 +92,28 @@ function sortAge(arr) {
     console.log(`${x.name} ${x.age}`)
   })
 }
-
 sortAge(members);
+
+
+/* Media Età (Luca) */
+const sumOfAges = members.reduce((total, member) => total + member.age,0);
+const averageAge = sumOfAges / members.length;
+console.log(averageAge);
+
+
+/* Favorite Game (Dennis) */
+//print who write "LOL" or "League of Legends" on favorite games
+function favGames(array) {
+  let likesLol = false;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].favoriteVideoGame == "League of Legends" || array[i].favoriteVideoGame == "LOL") {
+      console.log(array[i].name + " likes League of Legends")
+      likesLol = true
+    }
+
+  }
+  if (likesLol == false) {
+    console.log("A nessuno piace questo gioco!!")
+  }
+}
+favGames(members)
