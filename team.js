@@ -74,6 +74,27 @@ const members = [
 ];
 
 
+/* Ordine di età (Andrea) */
+function sortAge(arr) {
+  arr.sort((a, b) => {
+    const ageA = a.age;
+    const ageB = b.age;
+
+    if (ageA < ageB) {
+      return -1
+    } else if (ageA > ageB) {
+      return 1
+    }
+    return 0;
+  })
+
+  arr.forEach(x => {
+    console.log(`${x.name} ${x.age}`)
+  })
+}
+sortAge(members);
+
+
 /* Media Età (Luca) */
 const sumOfAges = members.reduce((total, member) => total + member.age,0);
 const averageAge = sumOfAges / members.length;
