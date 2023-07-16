@@ -73,6 +73,18 @@ const members = [
   }
 ];
 
+//Ordina per cognome(Lorenzo Gatto)
+function sortSurname() {
+  members.sort((x, y) => {
+    if (x.surname > y.surname) { return 1 }
+    if (x.surname < y.surname) { return -1 }
+    return 0;
+  })
+  for (let i = 0; i < members.length; i++) {
+    console.log(members[i].surname + " " + members[i].name)
+  };
+}
+sortSurname();
 
 /* Ordine di età (Andrea) */
 function sortAge(arr) {
