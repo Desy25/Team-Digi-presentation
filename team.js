@@ -85,3 +85,61 @@ function sortSurname() {
   };
 }
 sortSurname();
+
+/* Ordine di età (Andrea) */
+function sortAge(arr) {
+  arr.sort((a, b) => {
+    const ageA = a.age;
+    const ageB = b.age;
+
+    if (ageA < ageB) {
+      return -1
+    } else if (ageA > ageB) {
+      return 1
+    }
+    return 0;
+  })
+
+  arr.forEach(x => {
+    console.log(`${x.name} ${x.age}`)
+  })
+}
+sortAge(members);
+
+
+/* Media Età (Luca) */
+const sumOfAges = members.reduce((total, member) => total + member.age,0);
+const averageAge = sumOfAges / members.length;
+console.log(averageAge);
+
+
+/* Favorite Game (Dennis) */
+//print who write "LOL" or "League of Legends" on favorite games
+function favGames(array) {
+  let likesLol = false;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].favoriteVideoGame == "League of Legends" || array[i].favoriteVideoGame == "LOL") {
+      console.log(array[i].name + " likes League of Legends")
+      likesLol = true
+    }
+
+  }
+  if (likesLol == false) {
+    console.log("A nessuno piace questo gioco!!")
+  }
+}
+favGames(members)
+
+
+
+// Print who has a pet. (Desirè)
+
+function getMembersPet(array) {
+  for(let i = 0; i < array.length; i++){
+      if (array[i].petName.length > 0) {
+          console.log(array[i].name + "-" + array[i].petName);
+      }
+  }
+}
+
+getMembersPet(members);
